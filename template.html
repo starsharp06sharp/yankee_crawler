@@ -7,13 +7,18 @@
     <title>{{ title }}</title>
 
     <link href="./bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <style>
+    p {
+        font-size: 20px !important;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
         <h2>{{ title }}</h2>
     </div>
     <div class="container">
-        <div id="main-car" class="carousel slide" data-ride="carousel">
+        <div id="main-car" class="carousel slide" data-interval="" data-ride="carousel">
             <div class="carousel-inner">
         {% for slide in slides %}
             {% if loop.first %}
